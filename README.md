@@ -33,7 +33,7 @@ Then I combined all the changes and made 2 datasets
 Disclaimer: I trained it less than an hour and the whole project took 4 hours to make.
 ![](imgs/three.png)
 
-[Notebook](https://github.com/korjusk/Brighter/blob/master/notebook.ipynb)
+[Notebook](https://nbviewer.jupyter.org/github/korjusk/Brighter/blob/master/notebook.ipynb)
 #### Whats next?
 Try to detect text from the crappy images, manually improved images, images improved with ML and original images.
 Compare the results and conclude if its something to invest more time in.
