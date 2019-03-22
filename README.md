@@ -1,6 +1,6 @@
 # Brighter
 
-![]()
+<img src="imgs/test_input.png" width="33%"/><img src="imgs/test_output.png" width="33%"/><img src="imgs/test_man.png" width="33%"/>
 
 Sometimes there's something wrong with the image. Let's call these images 'low quality'. (For example watermark on the image, blurry, red eyes etc)
 
@@ -21,17 +21,18 @@ I ignored text boundix boxes and resized images to 512px.
 
 ### Lower the images quality
 With python Pillow I changed the image resolution, brightness, contrast, sharpness and quality.
-First is the original picture
+Samples are in [/imgs/](https://github.com/korjusk/Brighter/tree/master/imgs) directory.
 
 
-Then I combined the changes and made 2 datasets.
+Then I combined all the changes and made 2 datasets
 Crappy quality vs normal
+![](imgs/dataset.png)
 
 #### Results
 Disclaimer: I trained it less than an hour and the whole project took 4 hours to make.
+![](imgs/three.png)
 
-
-[Notebook]()
+[Notebook](https://github.com/korjusk/Brighter/blob/master/notebook.ipynb)
 #### Whats next?
 Try to detect text from the crappy images, manually improved images, images improved with ML and original images.
 Compare the results and conclude if its something to invest more time in.
