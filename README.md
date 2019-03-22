@@ -1,19 +1,20 @@
 # Brighter
 
-<img src="imgs/test_input.png" width="33%"/><img src="imgs/test_output.png" width="33%"/><img src="imgs/test_man.png" width="33%"/>
+#### Input / Output / Manually brightened input image
+![imgs/test_result.png](imgs/test_result.png)
 
-Sometimes there's something wrong with the image. Let's call these images 'low quality'. (For example watermark on the image, blurry, red eyes etc)
+Sometimes there's something wrong with the image. Let's call these images 'low quality'. (For example watermark on the image, blurry images, red eyes, black and white photos etc)
 
 If I can convert the good images to low-quality images then I can reverse the process and improve the low-quality photos.
 
-In order to make the model produce high quality results, I will need to create a custom loss function which incorporates feature loss (also known as perceptual loss), along with gram loss. These techniques can be used for many other types of image generation task, such as image colorization.
+To archive this I created a custom loss function which incorporates feature loss (also known as perceptual loss), along with gram loss.
 
 ### Goal
 1. Improve dark image quality
 2. Improve OCR from the dark image
 
 ### Data
-From [this](https://gengo.ai/datasets/15-best-ocr-handwriting-datasets/) list choosed MSRA Text Detection 500 Database [(MSRA-TD500)](http://www.iapr-tc11.org/mediawiki/index.php?title=MSRA_Text_Detection_500_Database_(MSRA-TD500)).
+From [this](https://gengo.ai/datasets/15-best-ocr-handwriting-datasets/) list I choosed MSRA Text Detection 500 Database [(MSRA-TD500)](http://www.iapr-tc11.org/mediawiki/index.php?title=MSRA_Text_Detection_500_Database_(MSRA-TD500)).
 
 ![](http://www.iapr-tc11.org/mediawiki/images/MSRA-TD500_Example.jpg)
 
@@ -25,7 +26,7 @@ Samples are in [/imgs/](https://github.com/korjusk/Brighter/tree/master/imgs) di
 
 
 Then I combined all the changes and made 2 datasets
-Crappy quality vs normal
+#### Crappy quality vs normal
 ![](imgs/dataset.png)
 
 #### Results
